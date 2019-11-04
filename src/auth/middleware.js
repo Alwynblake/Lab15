@@ -28,7 +28,8 @@ module.exports = (req, res, next) => {
     let auth = {username,password};  // {username:"john", password:"mysecret"}
 
     return User.authenticateBasic(auth)
-      .then( user => _authenticate(user) );
+      .then( user => _authenticate(user) )
+      .catch(next);
   }
 
   function _authenticate(user) {
