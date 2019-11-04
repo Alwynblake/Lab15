@@ -6,7 +6,7 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 
 const images = new mongoose.Schema({
-  title: {type:String, required:true, unique:true},
+  title: {type:String, required:true},
   user_id: {type:String, required:true},
   description: {type: String},
   url: {type:String, required:true, unique:true},
@@ -18,5 +18,12 @@ images.pre('save', async function () {
     this.user_id = await bcrypt.hash(this.user_id, 10);
   }
 });
+
+images.statics.authenticateBasic = function(auth) {
+  let query = {title:auth.title};
+  return this.findOne(query)
+    .then( user => user && user.comparePassword(auth.user_id) )
+    .catch(error => {throw error;});
+};
 
 module.exports = mongoose.model('images', images);

@@ -21,10 +21,10 @@ users.pre('save', async function() {
 users.statics.createFromOauth = function(email) {
   if(! email) { return Promise.reject('Validation Error'); }
   return this.findOne( {email} )
-    .then(user => {
-      if( !user ) { throw new Error('User Not Found'); }
-      console.log('Welcome Back', user.username);
-      return user;
+    .then(users => {
+      if( !users ) { throw new Error('User Not Found'); }
+      console.log('Welcome Back', users.username);
+      return users;
     })
     .catch( error => {
       console.log('Creating new user');
@@ -37,10 +37,11 @@ users.statics.createFromOauth = function(email) {
 users.statics.authenticateBasic = function(auth) {
   let query = {username:auth.username};
   return this.findOne(query)
-    .then( user => user && user.comparePassword(auth.password) )
+    .then( user => users && users.comparePassword(auth.password) )
     .catch(error => {throw error;});
 };
 
+// bear auth
 users.statics.authenticateToken = function (token) {
   let parsedToken = jwt.verify(token, process.env.SECRET);
   return this.findOne({ _id: parsedToken.id });
