@@ -2,21 +2,13 @@
 
 require('dotenv').config();
 const mongoose = require('mongoose');
-const bcrypt = require('bcrypt');
-const jwt = require('jsonwebtoken');
 
 const imageModel = new mongoose.Schema({
   title: {type:String, required:true},
   user_id: {type:String, required:true},
   description: {type: String},
   url: {type:String, required:true, unique:true},
-  // created_at:{type:Date, required:true},
-});
-
-imageModel.pre('save', async function () {
-  if (this.isModified('user_id')) {
-    this.user_id = await bcrypt.hash(this.user_id, 10);
-  }
+  created_at:{type:Date},
 });
 
 imageModel.statics.authenticateBasic = function(auth) {

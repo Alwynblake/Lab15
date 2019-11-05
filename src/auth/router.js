@@ -36,20 +36,21 @@ authRouter.post('/signin', auth, (req, res, next) => {
 
 // request for images
 authRouter.get('/images', auth, (req, res, next) => {
-  imageModel.get()
+  imageModel.find({})
     .then(results => {
       res.json(results);
     }) .catch(next);
 });
 
-authRouter.get('/image/:id', auth, (req, res, next) => {
-  imageModel.get(req.params.id)
-    .then(records => res.json(records[0]))
-    .catch(next);
-});
+// authRouter.get('/image/:id', auth, (req, res, next) => {
+//   imageModel.get(req.params.id)
+//     .then(records => res.json(records[0]))
+//     .catch(next);
+// });
 
 authRouter.post('/images', auth, (req,res,next) => {
-  imageModel.post(req.body)
+  let img = new imageModel(req.body);
+  img.save()
     .then(result => res.json(result))
     .catch(next);
 });
