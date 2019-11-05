@@ -3,16 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="94b78da6-e339-449e-9454-87f8275404cf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/__tests__/routes.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/__tests__/routes.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/WiredTiger.turtle" beforeDir="false" afterPath="$PROJECT_DIR$/db/WiredTiger.turtle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/WiredTiger.wt" beforeDir="false" afterPath="$PROJECT_DIR$/db/WiredTiger.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/collection-2--767231328133266198.wt" beforeDir="false" afterPath="$PROJECT_DIR$/db/collection-2--767231328133266198.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/index-3--767231328133266198.wt" beforeDir="false" afterPath="$PROJECT_DIR$/db/index-3--767231328133266198.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/index-6--767231328133266198.wt" beforeDir="false" afterPath="$PROJECT_DIR$/db/index-6--767231328133266198.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/journal/WiredTigerLog.0000000001" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/mongod.lock" beforeDir="false" afterPath="$PROJECT_DIR$/db/mongod.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/sizeStorer.wt" beforeDir="false" afterPath="$PROJECT_DIR$/db/sizeStorer.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auth/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +70,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1572887499857</updated>
-      <workItem from="1572887500978" duration="24383000" />
+      <workItem from="1572887500978" duration="26036000" />
     </task>
     <servers />
   </component>
