@@ -42,11 +42,17 @@ authRouter.get('/images', auth, (req, res, next) => {
     }) .catch(next);
 });
 
-// authRouter.get('/image/:id', auth, (req, res, next) => {
-//   imageModel.get(req.params.id)
-//     .then(records => res.json(records[0]))
-//     .catch(next);
-// });
+authRouter.get('/image/:id', auth, (req, res, next) => {
+  imageModel.findOne({_id: req.params.id})
+    .then(records => res.json(records[0]))
+    .catch(next);
+});
+
+authRouter.get('/images/:userId', auth, (req, res, next) => {
+  imageModel.find({user_id: req.params.userId})
+    .then(records => res.json(records[0]))
+    .catch(next);
+});
 
 authRouter.post('/images', auth, (req,res,next) => {
   let img = new imageModel(req.body);
@@ -55,5 +61,18 @@ authRouter.post('/images', auth, (req,res,next) => {
     .catch(next);
 });
 
+authRouter.put('/image/:id', auth, (req, res, next) => {
+  imageModel.findOneAndUpdate({
+    _id: req.params.id})
+    .then(records => res.json(records[0]))
+    .catch(next);
+});
+
+authRouter.delete('/image/:id', auth, (req, res, next) => {
+  imageModel.findOneAndDelete({
+    _id: req.params.id})
+    .then(records => res.json(records[0]))
+    .catch(next);
+});
 
 module.exports = authRouter;

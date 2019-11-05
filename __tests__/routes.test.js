@@ -52,6 +52,29 @@ describe('Testing express routes', () => {
         });
     });
 
+    it('should be able to fetch a specified image', async (done) => {
+      const mongoUser = await User.findOne({
+        username: 'userman',
+      });
+      const token = mongoUser.generateToken();
+      return request.post('/images')
+        .set('Authorization', `Bearer ${token}`)
+        .send({
+          title: 'test',
+          user_id: mongoUser._id,
+          url: 'image.wherever',
+        })
+        .then(response => {
+          request.get(`/images/${response.body._id}`)
+            .set('Authorization', `Bearer ${token}`)
+            .then(response => {
+              expect(response.status).toBe(200);
+              expect(response.body.length).toBe(0);
+              done();
+            });
+        });
+    });
+
     it ('should be able to post an image', async(done) => {
       const mongoUser = await User.findOne({username: 'userman'});
       const token = mongoUser.generateToken();
