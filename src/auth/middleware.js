@@ -1,6 +1,6 @@
 'use strict';
 
-const Users = require('./users-model.js');
+const Users = require('../model/users-model.js');
 
 module.exports = (req, res, next) => {
 
@@ -43,6 +43,17 @@ module.exports = (req, res, next) => {
           next();
         } else _authError();
       });
+  }
+
+  function _authenticate(users) {
+    if(users) {
+      req.users = users;
+      req.token = users.generateToken();
+      next();
+    }
+    else {
+      _authError();
+    }
   }
 
   function _authError() {

@@ -2,25 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94b78da6-e339-449e-9454-87f8275404cf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/auth/oauth/google.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/Lab15UML.JPG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/WiredTiger.turtle" beforeDir="false" afterPath="$PROJECT_DIR$/db/WiredTiger.turtle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/WiredTiger.wt" beforeDir="false" afterPath="$PROJECT_DIR$/db/WiredTiger.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/collection-4--767231328133266198.wt" beforeDir="false" afterPath="$PROJECT_DIR$/db/collection-4--767231328133266198.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/collection-7--767231328133266198.wt" beforeDir="false" afterPath="$PROJECT_DIR$/db/collection-7--767231328133266198.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/diagnostic.data/metrics.2019-11-04T17-52-07Z-00000" beforeDir="false" afterPath="$PROJECT_DIR$/db/diagnostic.data/metrics.2019-11-04T17-52-07Z-00000" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/diagnostic.data/metrics.interim" beforeDir="false" afterPath="$PROJECT_DIR$/db/diagnostic.data/metrics.interim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/index-5--767231328133266198.wt" beforeDir="false" afterPath="$PROJECT_DIR$/db/index-5--767231328133266198.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/index-6--767231328133266198.wt" beforeDir="false" afterPath="$PROJECT_DIR$/db/index-6--767231328133266198.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/index-8--767231328133266198.wt" beforeDir="false" afterPath="$PROJECT_DIR$/db/index-8--767231328133266198.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/index-9--767231328133266198.wt" beforeDir="false" afterPath="$PROJECT_DIR$/db/index-9--767231328133266198.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/journal/WiredTigerLog.0000000001" beforeDir="false" afterPath="$PROJECT_DIR$/db/journal/WiredTigerLog.0000000001" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/sizeStorer.wt" beforeDir="false" afterPath="$PROJECT_DIR$/db/sizeStorer.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auth/image-model.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/image-model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auth/middleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/middleware.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auth/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auth/users-model.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/users-model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/mongod.lock" beforeDir="false" afterPath="$PROJECT_DIR$/db/mongod.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,17 +32,30 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="1TA0Gun90Kt7lP8GD8Z16QLZmpM" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets" />
+      <recent name="$PROJECT_DIR$/src/model" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -79,7 +79,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1572887499857</updated>
-      <workItem from="1572887500978" duration="11462000" />
+      <workItem from="1572887500978" duration="26652000" />
+      <workItem from="1573082269223" duration="272000" />
+      <workItem from="1573173848837" duration="136000" />
+      <workItem from="1573173991961" duration="520000" />
     </task>
     <servers />
   </component>
@@ -91,10 +94,15 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

@@ -1,7 +1,7 @@
 'use strict';
 
 const superagent = require('superagent');
-const Users = require('../users-model.js');
+const Users = require('../../model/users-model.js');
 
 const authorize = (req) => {
 
@@ -23,7 +23,7 @@ const authorize = (req) => {
       return access_token;
     })
     .then(token => {
-      return superagent.get('https://www.googleapis.com/plus/v1/people/me/openIdConnect')
+      return superagent.post('https://www.googleapis.com/plus/v1/people/me/openIdConnect')
         .set('Authorization', `Bearer ${token}`)
         .then( response => {
           let user = response.body;
