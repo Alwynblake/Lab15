@@ -1,5 +1,5 @@
 ## Lab15
-
+[![Build Status](https://www.travis-ci.com/Alwynblake/Lab15.svg?branch=master)](https://www.travis-ci.com/Alwynblake/Lab15)
 #### Purpose:
 GRADED pair programming assignment
 
