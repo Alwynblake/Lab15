@@ -15,3 +15,6 @@ https://lab15auth.herokuapp.com/
 
 #### Tests
 `npm run test`
+
+#### UML
+![](./assets/Lab15UML.JPG)

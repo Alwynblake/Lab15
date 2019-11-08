@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94b78da6-e339-449e-9454-87f8275404cf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/Lab15UML.JPG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/WiredTiger.turtle" beforeDir="false" afterPath="$PROJECT_DIR$/db/WiredTiger.turtle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/WiredTiger.wt" beforeDir="false" afterPath="$PROJECT_DIR$/db/WiredTiger.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/mongod.lock" beforeDir="false" afterPath="$PROJECT_DIR$/db/mongod.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,7 +32,11 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="1TA0Gun90Kt7lP8GD8Z16QLZmpM" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -45,6 +53,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets" />
       <recent name="$PROJECT_DIR$/src/model" />
     </key>
   </component>
@@ -70,7 +79,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1572887499857</updated>
-      <workItem from="1572887500978" duration="26036000" />
+      <workItem from="1572887500978" duration="26652000" />
+      <workItem from="1573082269223" duration="272000" />
+      <workItem from="1573173848837" duration="136000" />
+      <workItem from="1573173991961" duration="520000" />
     </task>
     <servers />
   </component>
@@ -82,10 +94,15 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
